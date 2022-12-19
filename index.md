@@ -420,9 +420,8 @@ If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instructions.
 {% endcomment %}
-{% if online != "false" %}
+
 {% include install_instructions/videoconferencing.html %}
-{% endif %}
 
 {% comment %}
 These are the installation instructions for the tools used
@@ -432,7 +431,7 @@ during the workshop.
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
+{% include swc/setup.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
